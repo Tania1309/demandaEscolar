@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demandaar</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">EEPAMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Agendar Horário</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ADM
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cadastro de Sala</a></li>
+                            <li><a class="dropdown-item" href="#">Cadastro de Colaboradores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="F1-sainz-abu-dhabi-2024-teste-williams.jpg" class="d-block w-100 " id="imagem" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="la baguette.jpg" class="d-block w-100" alt="..." id="imagem">
+            </div>
+            <div class="carousel-item">
+                <img src="Lune.jpg" class="d-block w-100" alt="..." id="imagem">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <h2>
+        Visualização das Salas
+    </h2>
+    <br>
+    <table>
+        <tr>
+            <th>Turma</th>
+            <th>Professor</th>
+            <th>Sala</th>
+            <th>Horário</th>
+            <th>Situação</th>
+            <th>Data</th>
+        </tr>
+        <tr>
+            <th>--</th>
+            <td>--</td>
+            <td>100</td>
+            <td>--</td>
+            <td>Vago</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <th>HT-IPI-01-M-25-10495</th>
+            <td>Elia Martell</td>
+            <td>101</td>
+            <td>Manhã</td>
+            <td>Reservado</td>
+            <td>18/09</td>
+        </tr>
+        <tr>
+            <th>HT-IPI-01-T-25-10496</th>
+            <td>Daenerys Targaryen </td>
+            <td>102</td>
+            <td>Tarde</td>
+            <td>Reservado</td>
+            <td>22/09</td>
+        </tr>
+        <tr>
+            <th>HT-IPI-01-N-25-10497</th>
+            <td>John Snow</td>
+            <td>103</td>
+            <td>Noite</td>
+            <td>Reservado</td>
+            <td>30/09</td>
+        </tr>
+        <tr>
+            <th>HT-IPI-01-N-25-10498</th>
+            <td>Eddard Stark</td>
+            <td>102</td>
+            <td>Noite</td>
+            <td>Reservado</td>
+            <td>22/09</td>
+        </tr>
+        <tr>
+            <th>--</th>
+            <td>--</td>
+            <td>105</td>
+            <td>--</td>
+            <td>Vago</td>
+            <td>--</td>
+        </tr>
+
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
