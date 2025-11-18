@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demandaar</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">EEPAMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agendarhorario.html">Agendar Horário</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ADM
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="loginADM.html">Login</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="cadastrarSala.html">Cadastro de Sala</a></li>
+                            <li><a class="dropdown-item" href="cadastrarCol.html">Cadastro de Colaboradores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+   <div class="container-centralizado">
+    <form class="form-estilizado d-flex flex-column align-items-center">
+        <div class="mb-3">
+            <label for="staticEmail2" class="form-label visually-hidden">Nome:</label>
+            <input type="text" class="form-control" id="staticEmail2" placeholder="Roberta Almeida">
+        </div>
+        <div class="mb-3">
+            <label for="inputEmail2" class="form-label visually-hidden">Email:</label>
+            <input type="email" class="form-control" id="inputEmail2" placeholder="email@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="inputPassword2" class="form-label visually-hidden">Senha:</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Senha">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Confirm sua Identidade</button>
+        </div>
+    </form>
+</div>
+
+    <footer class="footer">
+        <div class="redes-sociais">
+            <p>Siga nossas redes sociais!</p>
+            <div class="social-icons">
+                <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+                <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="assets/img/x.png" alt="X" /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
