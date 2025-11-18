@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demandaar</title>
+    <title>Cadastro Colaborador </title>
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -53,34 +53,34 @@
         <form class="formulario-adocao w-50">
             <div class="form-row row">
                 <div class="form-group col-md-12 mb-3">
-                    <label for="nome_completo">Professor (a):</label>
+                    <label for="nome_completo">Nome do Colaborador:</label>
                     <input type="text" class="form-control" id="nome" required />
                 </div>
 
                 <div class="form-group col-md-3 mb-3">
-                    <label for="cpf">Sala:</label>
-                    <input type="text" class="form-control" id="sala" required />
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" class="form-control" id="sala" required />
                 </div>
 
                 <div class="form-group col-md-3 mb-3">
-                    <label for="select">Turma:</label>
-                    <select class="form-control" id="turma">
-                        <option value="100">100</option>
-                        <option value="101">101</option>
-                        <option value="102">102</option>
-                        <option value="103">103</option>
-                        <option value="104">104</option>
-                        <option value="105">105</option>
+                    <label for="select">Cargo:</label>
+                    <select class="form-control" id="turma">  
+                        <option value="Professor">Professor</option>
+                        <option value="Coordenador">Coordenador</option>
+                        <option value="Secretário">Secretário</option>
+                        <option value="Supervisora Pedagógica">Supervisora Pedagógica</option>
+                        <option value="Orientador Educacional">Orientador Educacional</option>
+                      
                     </select>
                 </div>
 
                 <div class="form-group col-md-6 mb-3">
-                    <label>Data:</label>
-                    <input type="date" class="form-control" id="data" required />
+                    <label>E-mail:</label>
+                    <input type="email" class="form-control" id="email" required />
                 </div>
 
                 <div class="form-group col-md-12 mb-4">
-                    <label class="form-label">Horário:</label>
+                    <label class="form-label">Turno:</label>
                     <div class="d-flex flex-wrap">
                         <div class="form-check form-check-inline me-4">
                             <input class="form-check-input" type="radio" name="horario" id="manha" value="Manha"
@@ -99,12 +99,17 @@
                                 required />
                             <label class="form-check-label" for="noite">Noite</label>
                         </div>
+                        <div class="form-check form-check-inline me-4">
+                            <input class="form-check-input" type="radio" name="horario" id="integral" value="integral"
+                                required />
+                            <label class="form-check-label" for="integral">Integral</label>
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-group col-md-12 d-flex justify-content-between">
-                    <button type="submit" class="btn btn-primary w-50 me-2">Agendar</button>
-                    <button type="button" class="btn btn-danger w-50 ms-2">Cancelar Agendamento</button>
+                    <button type="submit" class="btn btn-primary w-50 me-2">Cadastrar</button>
+                    <button type="button" class="btn btn-danger w-50 ms-2">Colaboradores Cadastrados</button>
                 </div>
             </div>
         </form>
