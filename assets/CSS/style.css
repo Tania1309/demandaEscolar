@@ -23,7 +23,6 @@ html {
 .tabela {
     max-width: 900px;
     margin: 20px auto;
-    /* Centraliza a tabela na página */
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -34,11 +33,11 @@ html {
 #salas {
     width: 100%;
     border-collapse: collapse;
-    /* Colapsa as bordas das células */
+
     text-align: left;
 }
 
-/* Estilo para o cabeçalho da tabela */
+
 #salas th {
     background-color: #313131;
     color: #ffffff;
@@ -46,38 +45,36 @@ html {
     border: 1px solid #dee2e6;
 }
 
-/* Estilo para as células de dados */
+
 #salas td {
     padding: 12px 15px;
     border: 1px solid #dee2e6;
     color: #333;
 }
 
-/* Efeito de listras para melhorar a legibilidade */
+
 #salas tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Efeito de destaque ao passar o mouse sobre a linha */
+
 #salas tr:hover {
     background-color: #e9ecef;
     cursor: pointer;
 }
 
-/* Classes para estilizar a coluna de situação */
+
 .vago {
     color: #28a745;
-    /* Verde para 'Vago' */
     font-weight: bold;
 }
 
 .reservado {
     color: #ffc107;
-    /* Amarelo para 'Reservado' */
     font-weight: bold;
 }
 
-/* Responsividade básica para telas menores */
+
 @media screen and (max-width: 600px) {
 
     #salas,
@@ -144,6 +141,10 @@ html {
     #salas td:nth-of-type(6):before {
         content: "Data";
     }
+    
+#formulario{
+    width: 800px;
+    }
 }
 
 body {
@@ -160,14 +161,14 @@ body {
     margin-top: 30px;
 }
 
-/* Estilo para os rótulos */
+
 .formulario-adocao label {
     font-weight: 600;
     color: #495057;
     margin-bottom: 8px;
 }
 
-/* Estilo para os campos de entrada */
+
 .formulario-adocao .form-control {
     border-radius: 5px;
     border: 1px solid #ced4da;
@@ -181,7 +182,7 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-/* Estilo para os checkboxes e seus rótulos */
+
 .formulario-adocao .form-check-label {
     font-weight: normal;
     color: #6c757d;
@@ -193,7 +194,7 @@ body {
     cursor: pointer;
 }
 
-/* Estilo para os botões */
+
 .formulario-adocao .btn {
     width: 100%;
     border: none;
@@ -242,43 +243,53 @@ body {
     filter: invert(1);
 }
 
-/* Container para centralizar o formulário na página */
+
 .container-centralizado {
     display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente */
     align-items: center;
-    /* Centraliza verticalmente */
-    min-height: 100vh;
-    /* Garante que o contêiner ocupe a altura total da tela */
+    min-height: 500px;
+
 }
 
-/* Estilização personalizada do formulário */
+
 .form-estilizado {
     max-width: 400px;
-    /* Define uma largura máxima para o formulário */
+
     width: 100%;
     padding: 2rem;
-    /* Espaçamento interno */
+
     border: 1px solid #dee2e6;
-    /* Borda leve */
+
     border-radius: 0.5rem;
-    /* Borda arredondada */
+
     background-color: #f8f9fa;
-    /* Cor de fundo */
+
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    /* Sombra para profundidade */
+
 }
 
-/* Estilização do botão */
+
 .form-estilizado .btn {
     width: 100%;
-    /* Faz com que o botão ocupe toda a largura */
     font-weight: bold;
 }
 
-/* Ajuste de espaçamento entre os inputs para melhor visual */
+
 .form-estilizado .mb-3 {
     width: 100%;
-    /* Garante que cada item do formulário ocupe toda a largura disponível */
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-centralizado {
+        min-height: 900px;
+    }
+    #meio{
+        min-height: 900px; 
+        align-items: center;
+    }
+}
+#formulario{
+    width: 500px;
 }
