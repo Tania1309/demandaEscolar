@@ -64,13 +64,13 @@
 
                 <div class="form-group col-md-3 mb-3">
                     <label for="select">Cargo:</label>
-                    <select class="form-control" id="turma">  
+                    <select class="form-control" id="turma">
                         <option value="Professor">Professor</option>
                         <option value="Coordenador">Coordenador</option>
                         <option value="Secretário">Secretário</option>
                         <option value="Supervisora Pedagógica">Supervisora Pedagógica</option>
                         <option value="Orientador Educacional">Orientador Educacional</option>
-                      
+
                     </select>
                 </div>
 
@@ -108,8 +108,14 @@
                 </div>
 
                 <div class="form-group col-md-12 d-flex justify-content-between">
-                    <button type="submit" class="btn btn-primary w-50 me-2">Cadastrar</button>
-                    <button type="button" class="btn btn-danger w-50 ms-2">Colaboradores Cadastrados</button>
+                    <button type="submit" class="btn btn-primary w-50 me-2" onclick="alert('Cadastrado com sucesso!')">
+                        Cadastrar
+                    </button>
+
+                    <button type="button" class="btn btn-danger w-50 ms-2"
+                        onclick="alert('Exibindo colaboradores cadastrados...')">
+                        Colaboradores Cadastrados
+                    </button>
                 </div>
             </div>
         </form>

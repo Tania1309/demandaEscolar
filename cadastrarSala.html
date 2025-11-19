@@ -77,8 +77,8 @@
                 <div class="form-group col-md-12 mb-3">
                     <label>Observações:</label>
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Possui projetor, ar-condicionado..." id="floatingTextarea2"
-                            style="height: 100px"></textarea>
+                        <textarea class="form-control" placeholder="Possui projetor, ar-condicionado..."
+                            id="floatingTextarea2" style="height: 100px"></textarea>
                         <label for="floatingTextarea2"></label>
                     </div>
                 </div>
@@ -107,10 +107,15 @@
                 </div>
 
                 <div class="form-group col-md-12 d-flex justify-content-between">
-                    <button type="submit" class="btn btn-primary w-50 me-2">Agendar</button>
-                    <button type="button" class="btn btn-danger w-50 ms-2">Salas Cadastradas</button>
+                    <button type="submit" class="btn btn-primary w-50 me-2" onclick="alert('Cadastrado com sucesso!')">
+                        Cadastrar
+                    </button>
+
+                    <button type="button" class="btn btn-danger w-50 ms-2"
+                        onclick="alert('Lista de salas cadastradas!')">
+                        Salas Cadastradas
+                    </button>
                 </div>
-            </div>
         </form>
     </main>
     <footer class="footer">
